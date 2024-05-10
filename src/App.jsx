@@ -1,10 +1,16 @@
-import './App.css';
+import React from "react";
+import { Box } from '@mui/material';
+import Sidebar from "./components/Sidebar/Sidebar";
+import ApplicationRouter from "./routes/ApplicationRouter";
 
 function App() {
   return (
-    <h2>
-      Welcome to Sherwin Williams GPT
-    </h2>
+    <>
+      <Box sx={{ display: 'flex' }}>
+        <Sidebar />
+        <ApplicationRouter />
+      </Box>
+    </>
   );
 }
 
